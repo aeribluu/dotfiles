@@ -1,0 +1,54 @@
+# -----------------------------------------------------------------------------
+# Core Git Internal Files - Git usually ignores these by default.
+# -----------------------------------------------------------------------------
+.git/
+
+# -----------------------------------------------------------------------------
+# Editor / IDE Specific Temporary Files & Directories
+# -----------------------------------------------------------------------------
+# Vim/Neovim swap, backup, and undo files
+*.swp
+*~
+*.bak
+*.un~
+.nvim.bak
+.netrwhist
+
+# Emacs auto-save files and backups
+#*#
+.#*
+
+# VS Code specific directories (if you open your dotfiles repo in VS Code)
+.vscode/
+
+# JetBrains IDEs (IntelliJ, PyCharm, etc.)
+.idea/
+
+# -----------------------------------------------------------------------------
+# Common Logs, Caches, and Temporary Files
+# -----------------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.cache
+
+# Shell history files (these usually live in your home directory, *outside* the repo,
+# but adding them ensures they aren't accidentally tracked if symlinks break or
+# if a tool writes them inside a stowed directory unexpectedly).
+# Uncomment if you find these causing issues.
+.bash_history
+.zsh_history
+
+# -----------------------------------------------------------------------------
+# Machine-Specific / Local Overrides (Crucial for your gitconfig strategy)
+# -----------------------------------------------------------------------------
+# This is the file that will contain your sensitive gitconfig settings (user.name, email).
+# It lives in your HOME directory (~/.gitconfig.local) and is *not* part of this repo.
+# This entry is here as a reminder of the strategy. You don't ignore it *within* the repo.
+
+# If you create any other local-only files or directories for testing or
+# specific machine configurations that you *do not* want committed:
+# Example: a 'local/' folder at the root of your dotfiles for non-stowed items
+# local/
+# Example: a specific script in polybar that you never want to share
+# polybar/scripts/local_secret_script.sh
